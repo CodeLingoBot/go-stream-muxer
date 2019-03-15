@@ -418,7 +418,7 @@ func SubtestStreamReset(t *testing.T, tr smux.Transport) {
 	<-done
 }
 
-// check that Close also closes the underlying net.Conn
+// SubtestWriteAfterClose checks that Close also closes the underlying net.Conn
 func SubtestWriteAfterClose(t *testing.T, tr smux.Transport) {
 	a, b := tcpPipe(t)
 
